@@ -31,7 +31,7 @@ open Fun
 open Parse
 ```
 
-The cool thing about this approach is that your test a declarative instead of getting lost in the CLI (also spares your ctrl + v / c keys).
+The cool thing about this approach is that your test a declarative instead of getting lost in the CLI (also spares your ctrl + c / v keys).
 
 You can also use the other approaches and keep to compilation as the ipynb is a seperate thing, without any coupling to the rest of the project.
 
