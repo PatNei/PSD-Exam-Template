@@ -1,0 +1,4 @@
+F:\syncthing-lenovo\ITU\5. Semester\PSD (Programmer som data)\Exam\Exam Template\code\obj\Debug\net7.0\exam-project.fsproj.AssemblyReference.cache
+F:\syncthing-lenovo\ITU\5. Semester\PSD (Programmer som data)\Exam\Exam Template\code\obj\Debug\net7.0\exam-project.AssemblyInfoInputs.cache
+F:\syncthing-lenovo\ITU\5. Semester\PSD (Programmer som data)\Exam\Exam Template\code\obj\Debug\net7.0\exam-project.AssemblyInfo.fs
+F:\syncthing-lenovo\ITU\5. Semester\PSD (Programmer som data)\Exam\Exam Template\code\obj\Debug\net7.0\exam-project.fsproj.CoreCompileInputs.cache

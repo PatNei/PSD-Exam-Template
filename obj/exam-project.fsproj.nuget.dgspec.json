@@ -1,0 +1,75 @@
+{
+  "format": 1,
+  "restore": {
+    "F:\\syncthing-lenovo\\ITU\\5. Semester\\PSD (Programmer som data)\\Exam\\Exam Template\\code\\exam-project.fsproj": {}
+  },
+  "projects": {
+    "F:\\syncthing-lenovo\\ITU\\5. Semester\\PSD (Programmer som data)\\Exam\\Exam Template\\code\\exam-project.fsproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\syncthing-lenovo\\ITU\\5. Semester\\PSD (Programmer som data)\\Exam\\Exam Template\\code\\exam-project.fsproj",
+        "projectName": "exam-project",
+        "projectPath": "F:\\syncthing-lenovo\\ITU\\5. Semester\\PSD (Programmer som data)\\Exam\\Exam Template\\code\\exam-project.fsproj",
+        "packagesPath": "C:\\Users\\Lunedesko\\.nuget\\packages\\",
+        "outputPath": "F:\\syncthing-lenovo\\ITU\\5. Semester\\PSD (Programmer som data)\\Exam\\Exam Template\\code\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Lunedesko\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\sdk\\8.0.100\\FSharp\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "FSharp.Core": {
+              "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[8.0.100, )",
+              "generatePathProperty": true
+            },
+            "FsLexYacc": {
+              "target": "Package",
+              "version": "[11.2.0, )",
+              "generatePathProperty": true
+            },
+            "FsLexYacc.Runtime": {
+              "target": "Package",
+              "version": "[11.2.0, )",
+              "generatePathProperty": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
