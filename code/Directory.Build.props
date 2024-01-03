@@ -1,5 +1,5 @@
 <Project>
   <PropertyGroup>
-    <BaseIntermediateOutputPath>./out/obj/</BaseIntermediateOutputPath>
+    <BaseIntermediateOutputPath>./out/obj/</BaseIntermediateOutputPath>  <!-- If you want to change the output path (Might also be nice to change the .fsprojc file as well) --> 
   </PropertyGroup>
 </Project>

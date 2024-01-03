@@ -2,16 +2,21 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net7.0</TargetFramework>
-    <OutputPath>out/bin/Debug/</OutputPath>
+    <OutputPath>out/bin/Debug/</OutputPath> <!-- If you want to change the output path (Might also be nice to change the Directory.Build.props file as well) --> 
     <RootNamespace>exam</RootNamespace>
   </PropertyGroup>
   
   <ItemGroup>
   		<!-- CPar.fsy and Clex.fsl should be changed to the files that you want to compile to .fs and .fsi files -->
+    <!-- change the paths here  -->
     <FsYacc Include="par/FunPar.fsy">
-        <OtherFlags>--module FunPar -o "par/FunPar.fs" </OtherFlags>
+
+        <!-- change the paths here  -->
+        <OtherFlags>--module FunPar -o "par/FunPar.fs" </OtherFlags> 
     </FsYacc>
+    <!-- change the paths here  -->
     <FsLex Include="lex/FunLex.fsl">
+        <!-- change the paths here  -->
         <OtherFlags>--unicode --module FunLex -o "lex/FunLex.fs"</OtherFlags>
     </FsLex>
   </ItemGroup>
@@ -25,7 +30,6 @@
     <Compile Include="lex/FunLex.fs" /> <!--  lexer file -->
 
     	
-    <!-- I recomend you leave this file here in the bottom -->
     <!-- <Compile Include="Program.fs" /> Only relevant if you're using program.fs which we are not -->
   </ItemGroup>
   <ItemGroup>
