@@ -24,6 +24,8 @@ This will load all dependencies and should be run when you are making changes or
 #load "code/Misc/Parse.fs"
 #load "code/Misc/ParseAndRun.fs"
 
+(* Remember to modify to the paths you have chosen *)
+
 open Absyn
 open Fun
 open Parse
