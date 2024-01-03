@@ -3,7 +3,7 @@ module FunPar
 #nowarn "64";; // turn off warnings that type variables used in production annotations are instantiated to concrete type
 open FSharp.Text.Lexing
 open FSharp.Text.Parsing.ParseHelpers
-# 1 "Par/FunPar.fsy"
+# 1 "par/FunPar.fsy"
 
  (* File Fun/FunPar.fsy 
     Parser for micro-ML, a small functional language; one-argument functions.
@@ -12,7 +12,7 @@ open FSharp.Text.Parsing.ParseHelpers
 
  open Absyn;
 
-# 15 "Par/FunPar.fs"
+# 15 "par/FunPar.fs"
 // This type is the type of tokens accepted by the parser
 type token = 
   | EOF
@@ -247,7 +247,7 @@ let _fsyacc_reductionSymbolCounts = [|1us;2us;1us;1us;6us;2us;3us;3us;3us;3us;3u
 let _fsyacc_productionToNonTerminalTable = [|0us;1us;2us;2us;2us;2us;2us;2us;2us;2us;2us;2us;2us;2us;2us;2us;2us;3us;3us;3us;3us;3us;4us;4us;5us;5us;|]
 let _fsyacc_immediateActions = [|65535us;49152us;65535us;16385us;65535us;65535us;65535us;65535us;65535us;65535us;65535us;65535us;65535us;65535us;65535us;65535us;65535us;65535us;65535us;65535us;65535us;65535us;65535us;65535us;65535us;65535us;65535us;65535us;65535us;65535us;65535us;65535us;65535us;65535us;65535us;65535us;65535us;65535us;65535us;65535us;65535us;16401us;16402us;65535us;65535us;65535us;65535us;16403us;65535us;65535us;65535us;16404us;65535us;16405us;16406us;16407us;16408us;16409us;|]
 let _fsyacc_reductions = lazy [|
-# 250 "Par/FunPar.fs"
+# 250 "par/FunPar.fs"
         (fun (parseState : FSharp.Text.Parsing.IParseState) ->
             let _1 = parseState.GetInput(1) :?> Absyn.expr in
             Microsoft.FSharp.Core.Operators.box
@@ -256,40 +256,40 @@ let _fsyacc_reductions = lazy [|
                       raise (FSharp.Text.Parsing.Accept(Microsoft.FSharp.Core.Operators.box _1))
                    )
                  : 'gentype__startMain));
-# 259 "Par/FunPar.fs"
+# 259 "par/FunPar.fs"
         (fun (parseState : FSharp.Text.Parsing.IParseState) ->
             let _1 = parseState.GetInput(1) :?> Absyn.expr in
             Microsoft.FSharp.Core.Operators.box
                 (
                    (
-# 34 "Par/FunPar.fsy"
+# 34 "par/FunPar.fsy"
                                                                _1 
                    )
-# 34 "Par/FunPar.fsy"
+# 34 "par/FunPar.fsy"
                  : Absyn.expr));
-# 270 "Par/FunPar.fs"
+# 270 "par/FunPar.fs"
         (fun (parseState : FSharp.Text.Parsing.IParseState) ->
             let _1 = parseState.GetInput(1) :?> Absyn.expr in
             Microsoft.FSharp.Core.Operators.box
                 (
                    (
-# 38 "Par/FunPar.fsy"
+# 38 "par/FunPar.fsy"
                                                                _1                     
                    )
-# 38 "Par/FunPar.fsy"
+# 38 "par/FunPar.fsy"
                  : Absyn.expr));
-# 281 "Par/FunPar.fs"
+# 281 "par/FunPar.fs"
         (fun (parseState : FSharp.Text.Parsing.IParseState) ->
             let _1 = parseState.GetInput(1) :?> Absyn.expr in
             Microsoft.FSharp.Core.Operators.box
                 (
                    (
-# 39 "Par/FunPar.fsy"
+# 39 "par/FunPar.fsy"
                                                                _1                     
                    )
-# 39 "Par/FunPar.fsy"
+# 39 "par/FunPar.fsy"
                  : Absyn.expr));
-# 292 "Par/FunPar.fs"
+# 292 "par/FunPar.fs"
         (fun (parseState : FSharp.Text.Parsing.IParseState) ->
             let _2 = parseState.GetInput(2) :?> Absyn.expr in
             let _4 = parseState.GetInput(4) :?> Absyn.expr in
@@ -297,177 +297,177 @@ let _fsyacc_reductions = lazy [|
             Microsoft.FSharp.Core.Operators.box
                 (
                    (
-# 40 "Par/FunPar.fsy"
+# 40 "par/FunPar.fsy"
                                                                If(_2, _4, _6)         
                    )
-# 40 "Par/FunPar.fsy"
+# 40 "par/FunPar.fsy"
                  : Absyn.expr));
-# 305 "Par/FunPar.fs"
+# 305 "par/FunPar.fs"
         (fun (parseState : FSharp.Text.Parsing.IParseState) ->
             let _2 = parseState.GetInput(2) :?> Absyn.expr in
             Microsoft.FSharp.Core.Operators.box
                 (
                    (
-# 41 "Par/FunPar.fsy"
+# 41 "par/FunPar.fsy"
                                                                Prim("-", CstI 0, _2)  
                    )
-# 41 "Par/FunPar.fsy"
+# 41 "par/FunPar.fsy"
                  : Absyn.expr));
-# 316 "Par/FunPar.fs"
+# 316 "par/FunPar.fs"
         (fun (parseState : FSharp.Text.Parsing.IParseState) ->
             let _1 = parseState.GetInput(1) :?> Absyn.expr in
             let _3 = parseState.GetInput(3) :?> Absyn.expr in
             Microsoft.FSharp.Core.Operators.box
                 (
                    (
-# 42 "Par/FunPar.fsy"
+# 42 "par/FunPar.fsy"
                                                                Prim("+",  _1, _3)     
                    )
-# 42 "Par/FunPar.fsy"
+# 42 "par/FunPar.fsy"
                  : Absyn.expr));
-# 328 "Par/FunPar.fs"
+# 328 "par/FunPar.fs"
         (fun (parseState : FSharp.Text.Parsing.IParseState) ->
             let _1 = parseState.GetInput(1) :?> Absyn.expr in
             let _3 = parseState.GetInput(3) :?> Absyn.expr in
             Microsoft.FSharp.Core.Operators.box
                 (
                    (
-# 43 "Par/FunPar.fsy"
+# 43 "par/FunPar.fsy"
                                                                Prim("-",  _1, _3)     
                    )
-# 43 "Par/FunPar.fsy"
+# 43 "par/FunPar.fsy"
                  : Absyn.expr));
-# 340 "Par/FunPar.fs"
+# 340 "par/FunPar.fs"
         (fun (parseState : FSharp.Text.Parsing.IParseState) ->
             let _1 = parseState.GetInput(1) :?> Absyn.expr in
             let _3 = parseState.GetInput(3) :?> Absyn.expr in
             Microsoft.FSharp.Core.Operators.box
                 (
                    (
-# 44 "Par/FunPar.fsy"
+# 44 "par/FunPar.fsy"
                                                                Prim("*",  _1, _3)     
                    )
-# 44 "Par/FunPar.fsy"
+# 44 "par/FunPar.fsy"
                  : Absyn.expr));
-# 352 "Par/FunPar.fs"
+# 352 "par/FunPar.fs"
         (fun (parseState : FSharp.Text.Parsing.IParseState) ->
             let _1 = parseState.GetInput(1) :?> Absyn.expr in
             let _3 = parseState.GetInput(3) :?> Absyn.expr in
             Microsoft.FSharp.Core.Operators.box
                 (
                    (
-# 45 "Par/FunPar.fsy"
+# 45 "par/FunPar.fsy"
                                                                Prim("/",  _1, _3)     
                    )
-# 45 "Par/FunPar.fsy"
+# 45 "par/FunPar.fsy"
                  : Absyn.expr));
-# 364 "Par/FunPar.fs"
+# 364 "par/FunPar.fs"
         (fun (parseState : FSharp.Text.Parsing.IParseState) ->
             let _1 = parseState.GetInput(1) :?> Absyn.expr in
             let _3 = parseState.GetInput(3) :?> Absyn.expr in
             Microsoft.FSharp.Core.Operators.box
                 (
                    (
-# 46 "Par/FunPar.fsy"
+# 46 "par/FunPar.fsy"
                                                                Prim("%",  _1, _3)     
                    )
-# 46 "Par/FunPar.fsy"
+# 46 "par/FunPar.fsy"
                  : Absyn.expr));
-# 376 "Par/FunPar.fs"
+# 376 "par/FunPar.fs"
         (fun (parseState : FSharp.Text.Parsing.IParseState) ->
             let _1 = parseState.GetInput(1) :?> Absyn.expr in
             let _3 = parseState.GetInput(3) :?> Absyn.expr in
             Microsoft.FSharp.Core.Operators.box
                 (
                    (
-# 47 "Par/FunPar.fsy"
+# 47 "par/FunPar.fsy"
                                                                Prim("=",  _1, _3)     
                    )
-# 47 "Par/FunPar.fsy"
+# 47 "par/FunPar.fsy"
                  : Absyn.expr));
-# 388 "Par/FunPar.fs"
+# 388 "par/FunPar.fs"
         (fun (parseState : FSharp.Text.Parsing.IParseState) ->
             let _1 = parseState.GetInput(1) :?> Absyn.expr in
             let _3 = parseState.GetInput(3) :?> Absyn.expr in
             Microsoft.FSharp.Core.Operators.box
                 (
                    (
-# 48 "Par/FunPar.fsy"
+# 48 "par/FunPar.fsy"
                                                                Prim("<>", _1, _3)     
                    )
-# 48 "Par/FunPar.fsy"
+# 48 "par/FunPar.fsy"
                  : Absyn.expr));
-# 400 "Par/FunPar.fs"
+# 400 "par/FunPar.fs"
         (fun (parseState : FSharp.Text.Parsing.IParseState) ->
             let _1 = parseState.GetInput(1) :?> Absyn.expr in
             let _3 = parseState.GetInput(3) :?> Absyn.expr in
             Microsoft.FSharp.Core.Operators.box
                 (
                    (
-# 49 "Par/FunPar.fsy"
+# 49 "par/FunPar.fsy"
                                                                Prim(">",  _1, _3)     
                    )
-# 49 "Par/FunPar.fsy"
+# 49 "par/FunPar.fsy"
                  : Absyn.expr));
-# 412 "Par/FunPar.fs"
+# 412 "par/FunPar.fs"
         (fun (parseState : FSharp.Text.Parsing.IParseState) ->
             let _1 = parseState.GetInput(1) :?> Absyn.expr in
             let _3 = parseState.GetInput(3) :?> Absyn.expr in
             Microsoft.FSharp.Core.Operators.box
                 (
                    (
-# 50 "Par/FunPar.fsy"
+# 50 "par/FunPar.fsy"
                                                                Prim("<",  _1, _3)     
                    )
-# 50 "Par/FunPar.fsy"
+# 50 "par/FunPar.fsy"
                  : Absyn.expr));
-# 424 "Par/FunPar.fs"
+# 424 "par/FunPar.fs"
         (fun (parseState : FSharp.Text.Parsing.IParseState) ->
             let _1 = parseState.GetInput(1) :?> Absyn.expr in
             let _3 = parseState.GetInput(3) :?> Absyn.expr in
             Microsoft.FSharp.Core.Operators.box
                 (
                    (
-# 51 "Par/FunPar.fsy"
+# 51 "par/FunPar.fsy"
                                                                Prim(">=", _1, _3)     
                    )
-# 51 "Par/FunPar.fsy"
+# 51 "par/FunPar.fsy"
                  : Absyn.expr));
-# 436 "Par/FunPar.fs"
+# 436 "par/FunPar.fs"
         (fun (parseState : FSharp.Text.Parsing.IParseState) ->
             let _1 = parseState.GetInput(1) :?> Absyn.expr in
             let _3 = parseState.GetInput(3) :?> Absyn.expr in
             Microsoft.FSharp.Core.Operators.box
                 (
                    (
-# 52 "Par/FunPar.fsy"
+# 52 "par/FunPar.fsy"
                                                                Prim("<=", _1, _3)     
                    )
-# 52 "Par/FunPar.fsy"
+# 52 "par/FunPar.fsy"
                  : Absyn.expr));
-# 448 "Par/FunPar.fs"
+# 448 "par/FunPar.fs"
         (fun (parseState : FSharp.Text.Parsing.IParseState) ->
             let _1 = parseState.GetInput(1) :?> Absyn.expr in
             Microsoft.FSharp.Core.Operators.box
                 (
                    (
-# 56 "Par/FunPar.fsy"
+# 56 "par/FunPar.fsy"
                                                                _1                     
                    )
-# 56 "Par/FunPar.fsy"
+# 56 "par/FunPar.fsy"
                  : Absyn.expr));
-# 459 "Par/FunPar.fs"
+# 459 "par/FunPar.fs"
         (fun (parseState : FSharp.Text.Parsing.IParseState) ->
             let _1 = parseState.GetInput(1) :?> string in
             Microsoft.FSharp.Core.Operators.box
                 (
                    (
-# 57 "Par/FunPar.fsy"
+# 57 "par/FunPar.fsy"
                                                                Var _1                 
                    )
-# 57 "Par/FunPar.fsy"
+# 57 "par/FunPar.fsy"
                  : Absyn.expr));
-# 470 "Par/FunPar.fs"
+# 470 "par/FunPar.fs"
         (fun (parseState : FSharp.Text.Parsing.IParseState) ->
             let _2 = parseState.GetInput(2) :?> string in
             let _4 = parseState.GetInput(4) :?> Absyn.expr in
@@ -475,12 +475,12 @@ let _fsyacc_reductions = lazy [|
             Microsoft.FSharp.Core.Operators.box
                 (
                    (
-# 58 "Par/FunPar.fsy"
+# 58 "par/FunPar.fsy"
                                                                Let(_2, _4, _6)        
                    )
-# 58 "Par/FunPar.fsy"
+# 58 "par/FunPar.fsy"
                  : Absyn.expr));
-# 483 "Par/FunPar.fs"
+# 483 "par/FunPar.fs"
         (fun (parseState : FSharp.Text.Parsing.IParseState) ->
             let _2 = parseState.GetInput(2) :?> string in
             let _3 = parseState.GetInput(3) :?> string in
@@ -489,70 +489,70 @@ let _fsyacc_reductions = lazy [|
             Microsoft.FSharp.Core.Operators.box
                 (
                    (
-# 59 "Par/FunPar.fsy"
+# 59 "par/FunPar.fsy"
                                                                Letfun(_2, _3, _5, _7) 
                    )
-# 59 "Par/FunPar.fsy"
+# 59 "par/FunPar.fsy"
                  : Absyn.expr));
-# 497 "Par/FunPar.fs"
+# 497 "par/FunPar.fs"
         (fun (parseState : FSharp.Text.Parsing.IParseState) ->
             let _2 = parseState.GetInput(2) :?> Absyn.expr in
             Microsoft.FSharp.Core.Operators.box
                 (
                    (
-# 60 "Par/FunPar.fsy"
+# 60 "par/FunPar.fsy"
                                                                _2                     
                    )
-# 60 "Par/FunPar.fsy"
+# 60 "par/FunPar.fsy"
                  : Absyn.expr));
-# 508 "Par/FunPar.fs"
+# 508 "par/FunPar.fs"
         (fun (parseState : FSharp.Text.Parsing.IParseState) ->
             let _1 = parseState.GetInput(1) :?> Absyn.expr in
             let _2 = parseState.GetInput(2) :?> Absyn.expr in
             Microsoft.FSharp.Core.Operators.box
                 (
                    (
-# 64 "Par/FunPar.fsy"
+# 64 "par/FunPar.fsy"
                                                                Call(_1, _2)           
                    )
-# 64 "Par/FunPar.fsy"
+# 64 "par/FunPar.fsy"
                  : Absyn.expr));
-# 520 "Par/FunPar.fs"
+# 520 "par/FunPar.fs"
         (fun (parseState : FSharp.Text.Parsing.IParseState) ->
             let _1 = parseState.GetInput(1) :?> Absyn.expr in
             let _2 = parseState.GetInput(2) :?> Absyn.expr in
             Microsoft.FSharp.Core.Operators.box
                 (
                    (
-# 65 "Par/FunPar.fsy"
+# 65 "par/FunPar.fsy"
                                                                Call(_1, _2)           
                    )
-# 65 "Par/FunPar.fsy"
+# 65 "par/FunPar.fsy"
                  : Absyn.expr));
-# 532 "Par/FunPar.fs"
+# 532 "par/FunPar.fs"
         (fun (parseState : FSharp.Text.Parsing.IParseState) ->
             let _1 = parseState.GetInput(1) :?> int in
             Microsoft.FSharp.Core.Operators.box
                 (
                    (
-# 69 "Par/FunPar.fsy"
+# 69 "par/FunPar.fsy"
                                                                CstI(_1)               
                    )
-# 69 "Par/FunPar.fsy"
+# 69 "par/FunPar.fsy"
                  : Absyn.expr));
-# 543 "Par/FunPar.fs"
+# 543 "par/FunPar.fs"
         (fun (parseState : FSharp.Text.Parsing.IParseState) ->
             let _1 = parseState.GetInput(1) :?> bool in
             Microsoft.FSharp.Core.Operators.box
                 (
                    (
-# 70 "Par/FunPar.fsy"
+# 70 "par/FunPar.fsy"
                                                                CstB(_1)               
                    )
-# 70 "Par/FunPar.fsy"
+# 70 "par/FunPar.fsy"
                  : Absyn.expr));
 |]
-# 555 "Par/FunPar.fs"
+# 555 "par/FunPar.fs"
 let tables : FSharp.Text.Parsing.Tables<_> = 
   { reductions = _fsyacc_reductions.Value;
     endOfInputTag = _fsyacc_endOfInputTag;
