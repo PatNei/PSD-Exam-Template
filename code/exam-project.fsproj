@@ -25,8 +25,9 @@
     <Compile Include="syntax/Absyn.fs" /> <!-- We want this to be compiled -->
     <Compile Include="par/FunPar.fs" /> <!--  parser file -->
     <Compile Include="lex/FunLex.fs" /> <!--  lexer file -->
-    	
-  <!-- <Compile Include="Program.fs" /> Only relevant if you're using program.fs which we are not -->
+
+    <!-- <None Include="test.fsx" /> You can also specify which files that SHOULD NOT be compiled using this directive -->
+    <!-- <Compile Include="Program.fs" /> Only relevant if you're using program.fs which we are not -->
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="FsLexYacc" Version="11.2.0" />
