@@ -11,24 +11,25 @@ Just remember to add the files that you want to compile to the fsproj. (See comm
 
 Instead of using fsharp interactive or .fsx or program.fs (all valid ways to run it though). I have created a ipynb file, that targets the .NET Runtime. This is done using the polyglot and jupiter extensions in vs code.
 
-The most important thing, is to have a block in the top that looks like the following. This will load all dependencies and should be run when you are making changes or want to test something.
+The most important thing, is to have a block in the top that looks like the following. 
+This will load all dependencies and should be run when you are making changes or want to test something and will be the main file for running your tests.
 
+**file: YOUR_FILE_NAME.ipynb**
 ```fsharp
 #r "nuget: FsLexYacc.Runtime"
-#load "Fun/Absyn.fs"
-#load "Fun/Fun.fs"
-#load "Fun/FunPar.fs"
-#load "Fun/FunLex.fs"
-#load "Fun/Parse.fs"
-#load "Fun/ParseAndRun.fs"
+#load "code/Syntax/Absyn.fs"
+#load "code/Misc/Fun.fs"
+#load "code/Par/FunPar.fs"
+#load "code/Lex/FunLex.fs"
+#load "code/Misc/Parse.fs"
+#load "code/Misc/ParseAndRun.fs"
 
 open Absyn
 open Fun
 open Parse
-
 ```
 
-The cool thing about this approach is that your test a declarative instead of lost in the CLI.
+The cool thing about this approach is that your test a declarative instead of getting lost in the CLI (also spares your ctrl + v / c keys).
 
 You can also use the other approaches and keep to compilation as the ipynb is a seperate thing, without any coupling to the rest of the project.
 
