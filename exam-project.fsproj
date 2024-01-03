@@ -2,30 +2,31 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net7.0</TargetFramework>
+    <OutputPath>out/bin/Debug/</OutputPath>
     <RootNamespace>exam</RootNamespace>
   </PropertyGroup>
   
   <ItemGroup>
   		<!-- CPar.fsy and Clex.fsl should be changed to the files that you want to compile to .fs and .fsi files -->
-    <FsYacc Include="FunPar.fsy">
-        <OtherFlags>--module CPar</OtherFlags>
+    <FsYacc Include="Par/FunPar.fsy">
+        <OtherFlags>--module FunPar -o "Par/FunPar.fs" </OtherFlags>
     </FsYacc>
-    <FsLex Include="FunLex.fsl">
-        <OtherFlags>--unicode</OtherFlags>
+    <FsLex Include="Lex/FunLex.fsl">
+        <OtherFlags>--unicode --module FunLex -o "Lex/FunLex.fs"</OtherFlags>
     </FsLex>
   </ItemGroup>
 
 
-		<!-- Here you should add the files that you have been given or are working on and the lexer and parser files -->
+  <!-- Here you should add the files that you have been given or are working on and the lexer and parser files -->
 
   <ItemGroup>
-    <Compile Include="Absyn.fs" /> <!-- We want this to be compiled -->
-    <Compile Include="FunPar.fs" /> <!--  parser file -->
-    <Compile Include="FunLex.fs" /> <!--  lexer file -->
+    <Compile Include="Syntaax/Absyn.fs" /> <!-- We want this to be compiled -->
+    <Compile Include="Par/FunPar.fs" /> <!--  parser file -->
+    <Compile Include="Lex/FunLex.fs" /> <!--  lexer file -->
 
     	
-    <!-- I recomend you leave these two files here in the bottom -->
-    <Compile Include="Program.fs" /> <!-- Only relevant if you're using program.fs which we are not -->
+    <!-- I recomend you leave this file here in the bottom -->
+    <!-- <Compile Include="Program.fs" /> Only relevant if you're using program.fs which we are not -->
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="FsLexYacc" Version="11.2.0" />
