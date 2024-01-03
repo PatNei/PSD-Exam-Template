@@ -7,7 +7,7 @@
   </PropertyGroup>
   
   <ItemGroup>
-  	<!-- CPar.fsy and Clex.fsl should be changed to the files that you want to compile to .fs and .fsi files -->
+  	<!-- FunPar.fsy and FunLex.fsl should be changed to the files that you want to compile to .fs and .fsi files -->
 
     <FsYacc Include="par/FunPar.fsy"> <!-- change the paths here  -->
         <OtherFlags>--module FunPar -o "par/FunPar.fs" </OtherFlags>  <!-- change the paths here  -->
