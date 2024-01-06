@@ -4,8 +4,6 @@
     sestoft@itu.dk * 2010-01-02
   *)
 
-module FunLex
-
 open (*Microsoft.*)FSharp.Text.Lexing
 open FunPar;
 
@@ -48,13 +46,17 @@ rule Token = parse
   | '<'             { LT }
   | ">="            { GE }
   | "<="            { LE }
-  | '+'             { PLUS }                     
+  | '+'             { PLUS }   
+  | "++"            { PLUSPLUS }                  
   | '-'             { MINUS }                     
   | '*'             { TIMES }                     
   | '/'             { DIV }                     
   | '%'             { MOD }
   | '('             { LPAR }
   | ')'             { RPAR }
+  | '{'             { LBRACE }
+  | '}'             { RBRACE }
+  | ','             { COMMA }
   | eof             { EOF }
   | _               { failwith "Lexer error: illegal symbol" }
 

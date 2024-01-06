@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "sb2Lp8QnOjUXE+uycTplxLpN9ARCzuM92kW8a4yxb7887R/kswyV4jq3JHqqr5sg30Q3NcJZLUQsW5Q1EPybPQ==",
+  "success": true,
+  "projectFilePath": "F:\\syncthing-lenovo\\ITU\\5. Semester\\PSD (Programmer som data)\\Exam\\Exam 2022\\code\\exam-project.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Lunedesko\\.nuget\\packages\\fsharp.core\\8.0.100\\fsharp.core.8.0.100.nupkg.sha512",
+    "C:\\Users\\Lunedesko\\.nuget\\packages\\fslexyacc\\11.2.0\\fslexyacc.11.2.0.nupkg.sha512",
+    "C:\\Users\\Lunedesko\\.nuget\\packages\\fslexyacc.runtime\\11.2.0\\fslexyacc.runtime.11.2.0.nupkg.sha512"
+  ],
+  "logs": []
+}

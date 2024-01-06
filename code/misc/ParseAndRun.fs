@@ -2,8 +2,9 @@
 
 module ParseAndRun
 
-let fromString = Parse.fromString;;
+let fromString = Parse.fromString
 
-let eval = Fun.eval;;
+let eval = HigherFun.eval
 
-let run e = eval e [];;
+let run e = eval e []
+

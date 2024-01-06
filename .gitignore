@@ -1,6 +1,0 @@
-!code/par/FunPar.fsy
-!code/lex/FunLex.fsl
-
-code/out
-code/par
-code/lex

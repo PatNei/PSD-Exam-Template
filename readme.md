@@ -35,7 +35,10 @@ The cool thing about this approach is that your test a declarative instead of ge
 
 You can also use the other approaches and keep to compilation as the ipynb is a seperate thing, without any coupling to the rest of the project.
 
+Instead of using the yacc file to build it, you simply do a dotnet build.
+
 ## Note
 
 Remember to do an initial dotnet restore + dotnet build. Then vscode should do it by it self.
 
+Based on work done by Patrick Mathiasen

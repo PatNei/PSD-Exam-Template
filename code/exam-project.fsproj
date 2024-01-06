@@ -18,13 +18,20 @@
     </FsLex>
   </ItemGroup>
 
-
-  <!-- Here you should add the files that you have been given or are working on and the lexer and parser files -->
-
-  <ItemGroup>
+ <ItemGroup>
+   <!-- Lexer and parse files as well as Absyn file. Keep them in this order or you will get errors. Order matters here. -->
     <Compile Include="syntax/Absyn.fs" /> <!-- We want this to be compiled -->
     <Compile Include="par/FunPar.fs" /> <!--  parser file -->
-    <Compile Include="lex/FunLex.fs" /> <!--  lexer file -->
+    <Compile Include="lex/FunLex.fs" /> <!--  lexer file -->  
+ </ItemGroup>
+
+  <!-- Here you should add the files that you have been given or are working on-->
+
+  <ItemGroup>
+    <Compile Include="misc/HigherFun.fs" /> <!-- We want this to be compiled -->
+    <Compile Include="misc/Parse.fs" /> <!-- We want this to be compiled -->
+    <Compile Include="misc/ParseAndRun.fs" /> <!-- We want this to be compiled -->
+    <None Include="test.fsx" /> <!-- We ´don't want this to be compiled -->
 
     <!-- <None Include="test.fsx" /> You can also specify which files that SHOULD NOT be compiled using this directive -->
     <!-- <Compile Include="Program.fs" /> Only relevant if you're using program.fs which we are not -->
